@@ -61,6 +61,12 @@ public class UserController {
 		obj = this.userService.update(obj);
 		return ResponseEntity.noContent().build();
 	}
+	
+	@RequestMapping(value="/{id}", method=RequestMethod.DELETE)
+	public ResponseEntity<Void> delete(@PathVariable Integer id) {
+		this.userService.delete(id);
+		return ResponseEntity.noContent().build();
+	}
 
 	@RequestMapping(method=RequestMethod.GET)
 	public ResponseEntity<List<UserDTO>> findAll() {
