@@ -1,22 +1,27 @@
 package com.springboot.template.resources;
 
-import com.springboot.template.domain.User;
-import com.springboot.template.dto.UserDTO;
-import com.springboot.template.service.UserService;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.springboot.template.domain.User;
+import com.springboot.template.dto.UserDTO;
+import com.springboot.template.service.UserService;
 
 @RestController
 @RequestMapping(path = "/user")
 public class UserController {
+	
+	private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
 
 	@Autowired
 	private UserService userService;
@@ -26,10 +31,17 @@ public class UserController {
 		User obj = this.userService.find(id);
 		return ResponseEntity.ok().body(obj);
 	}
+	
+	@RequestMapping(value="/email", method=RequestMethod.GET)
+	public ResponseEntity<User> find(@RequestParam(value="value") String email) {
+		LOG.info(email);
+		User obj = this.userService.findByEmail(email);
+		return ResponseEntity.ok().body(obj);
+	}
 
 	@RequestMapping(method=RequestMethod.GET)
 	public ResponseEntity<List<UserDTO>> findAll() {
-		List<User> list = userService.findAll();
+		List<User> list = this.userService.findAll();
 		List<UserDTO> listDTO = list.stream().map(obj -> new UserDTO(obj)).collect(Collectors.toList());
 		return ResponseEntity.ok().body(listDTO);
 	}
