@@ -23,6 +23,10 @@ import com.springboot.template.dto.UserDTO;
 import com.springboot.template.dto.UserNewDTO;
 import com.springboot.template.service.UserService;
 
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponses;
+import io.swagger.annotations.ApiResponse;
+
 @RestController
 @RequestMapping(path = "/user")
 public class UserController {
@@ -32,12 +36,14 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
+	@ApiOperation(value="Busca por id")
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
 	public ResponseEntity<User> find(@PathVariable Integer id) {
 		User obj = this.userService.find(id);
 		return ResponseEntity.ok().body(obj);
 	}
 	
+	@ApiOperation(value="Busca por email")
 	@RequestMapping(value="/email", method=RequestMethod.GET)
 	public ResponseEntity<User> find(@RequestParam(value="value") String email) {
 		LOG.info(email);
@@ -45,6 +51,7 @@ public class UserController {
 		return ResponseEntity.ok().body(obj);
 	}
 	
+	@ApiOperation(value="Insert user")
 	@RequestMapping(method=RequestMethod.POST)
 	public ResponseEntity<Void> insert(@Valid @RequestBody UserNewDTO objDto) {
 		User obj = this.userService.fromDTO(objDto);
@@ -54,6 +61,7 @@ public class UserController {
 		return ResponseEntity.created(uri).build();
 	}
 	
+	@ApiOperation(value="Atualiza user")
 	@RequestMapping(value="/{id}", method=RequestMethod.PUT)
 	public ResponseEntity<Void> update(@Valid @RequestBody UserDTO objDto, @PathVariable Integer id) {
 		User obj = this.userService.fromDTO(objDto);
@@ -62,12 +70,16 @@ public class UserController {
 		return ResponseEntity.noContent().build();
 	}
 	
+	@ApiOperation(value="Remove user")
+	@ApiResponses(value = {
+			@ApiResponse(code = 404, message = "Código inexistente") })
 	@RequestMapping(value="/{id}", method=RequestMethod.DELETE)
 	public ResponseEntity<Void> delete(@PathVariable Integer id) {
 		this.userService.delete(id);
 		return ResponseEntity.noContent().build();
 	}
 
+	@ApiOperation(value="Retorna todos os users")
 	@RequestMapping(method=RequestMethod.GET)
 	public ResponseEntity<List<UserDTO>> findAll() {
 		List<User> list = this.userService.findAll();
