@@ -3,6 +3,7 @@ package com.springboot.template.domain;
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import javax.persistence.CollectionTable;
 import javax.persistence.Column;
@@ -57,7 +58,7 @@ public class User implements Serializable {
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
-		/**/
+		/* Especifica o nivel de acesso ao sistema (endpoints) */
 		this.addPerfil(Perfil.USER);
 	}
 
@@ -91,6 +92,10 @@ public class User implements Serializable {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	
+	public Set<Perfil> getPerfis() {
+		return perfis.stream().map(x -> Perfil.toEnum(x)).collect(Collectors.toSet());
 	}
 	
 	public void addPerfil(Perfil perfil) {

@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,6 +18,9 @@ import com.springboot.template.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class UserService {
+	
+	@Autowired
+	private BCryptPasswordEncoder pe;
 	
 	@Autowired
 	private UserRepository userRepo;
@@ -70,7 +74,7 @@ public class UserService {
 	}
 
 	public User fromDTO(UserNewDTO obj) {
-		User user = new User(null, obj.getNome(), obj.getEmail(), obj.getSenha());
+		User user = new User(null, obj.getNome(), obj.getEmail(), pe.encode(obj.getSenha()));
 		return user;
 	}
 }
