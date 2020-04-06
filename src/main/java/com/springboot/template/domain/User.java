@@ -1,14 +1,21 @@
 package com.springboot.template.domain;
 
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
+import javax.persistence.CollectionTable;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import com.springboot.template.domain.enums.Perfil;
 
 @Entity(name = "USER")
 public class User implements Serializable {
@@ -25,11 +32,16 @@ public class User implements Serializable {
 	
 	@JsonIgnore
 	private String senha;
+	
+	@ElementCollection(fetch=FetchType.EAGER)
+	@CollectionTable(name="PERFIS")
+	private Set<Integer> perfis = new HashSet<>();
 
 	/**
 	 * 
 	 */
 	public User() {
+		this.addPerfil(Perfil.USER);
 	}
 
 	/**
@@ -45,6 +57,8 @@ public class User implements Serializable {
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
+		/**/
+		this.addPerfil(Perfil.USER);
 	}
 
 	public Integer getId() {
@@ -77,6 +91,10 @@ public class User implements Serializable {
 
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+	
+	public void addPerfil(Perfil perfil) {
+		perfis.add(perfil.getCod());
 	}
 	
 	@Override

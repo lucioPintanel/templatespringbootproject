@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import com.springboot.template.service.DBService;
+import com.springboot.template.services.DBService;
 
 
 @Configuration

@@ -21,7 +21,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.springboot.template.domain.User;
 import com.springboot.template.dto.UserDTO;
 import com.springboot.template.dto.UserNewDTO;
-import com.springboot.template.service.UserService;
+import com.springboot.template.services.UserService;
 
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponses;

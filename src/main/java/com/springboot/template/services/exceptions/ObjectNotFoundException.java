@@ -1,4 +1,4 @@
-package com.springboot.template.service.exceptions;
+package com.springboot.template.services.exceptions;
 
 public class ObjectNotFoundException extends RuntimeException {
 

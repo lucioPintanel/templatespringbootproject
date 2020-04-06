@@ -1,4 +1,4 @@
-package com.springboot.template.service;
+package com.springboot.template.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,8 +12,8 @@ import com.springboot.template.domain.User;
 import com.springboot.template.dto.UserDTO;
 import com.springboot.template.dto.UserNewDTO;
 import com.springboot.template.repositories.UserRepository;
-import com.springboot.template.service.exceptions.DataIntegrityException;
-import com.springboot.template.service.exceptions.ObjectNotFoundException;
+import com.springboot.template.services.exceptions.DataIntegrityException;
+import com.springboot.template.services.exceptions.ObjectNotFoundException;
 
 @Service
 public class UserService {
