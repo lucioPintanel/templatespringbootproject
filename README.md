@@ -45,4 +45,5 @@ Use these steps to clone from SourceTree, our client for using the repository co
 Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
 
 ## Objetivo Projeto
-Este prjeto tem por objetivo.
+Este projeto tem por objetivo ser a base para próximos projetos.
+Neste projeto foi usado o framework Spring Boot e com gerencia de dependencia foi usado Maven.
