@@ -1,29 +1,30 @@
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
-
----
+# API REST - Spring Boot
 
 ## Objetivo Geral
 Desenvolver um API REST em ligugem Java, usando o framework Spring Boot e o gerenciador de dependências Maven.
-A troca mensagens é feita no formato JSON.
+
+A troca de mensagens é feita no formato JSON.
+
 Foi usado a ferramenta Swagger para fazer a documentação automatizada dos recursos da API.
 
-## Instalação
+---
+
+## Decrição
+Esta API REST é um desenvolvimento básico com implementação de tratamentos de erros, autorização e autenticação com JWT, mas somente para o endpoint User.
+
+Esta API foi desenvolvida com intenção de servir de base para APIs mais complexas. O desenvolvedor deverá adionar os seus endpoints necessários para completar sua API.
+
+---
+
+## Software
 Windows:
 
 * [java version "1.8.0_241"](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
 * [spring toll suite](https://spring.io/tools).
 * [Apache Maven 3.6.3 ](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).
+* [Postman](https://www.postman.com/downloads/)
 
+---
 
 ## Tecnologias
 Como o Spring Boot é divido em módulos, foi usado os seguintes módulos:
@@ -38,6 +39,8 @@ Como o Spring Boot é divido em módulos, foi usado os seguintes módulos:
 8. [Springfox Swagger2 » 2.9.2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger2).
 9. [Springfox Swagger UI » 2.9.2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui).
 
+---
+
 ## Contributing
 
 1. Faça o _fork_ do projeto (<https://github.com/yourname/yourproject/fork>)
@@ -45,6 +48,8 @@ Como o Spring Boot é divido em módulos, foi usado os seguintes módulos:
 3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
 5. Crie um novo _Pull Request_
+
+---
 
 ## Referencia
 Este projeto foi criado baseado no curso feito na Udemy, Prof. Dr. Nelio Alves
