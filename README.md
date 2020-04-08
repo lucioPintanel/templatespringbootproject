@@ -53,12 +53,12 @@ Neste projeto foi usado o framework Spring Boot e com gerencia de dependencia fo
 ## Tecnologias
 Como o Spring Boot é divido em módulos, foi usado os seguintes módulos:
 
-1. Spring Boot Web Starter.
-2. Spring Boot Data JPA Starter.
-3. Spring Boot DevTools.
-4. H2 Database Engine.
+1. [Spring Boot Web Starter](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web).
+2. [Spring Boot Data JPA Starter](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa).
+3. [Spring Boot Developer Tools](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools).
+4. [H2 Database Engine](https://mvnrepository.com/artifact/com.h2database/h2).
 5. [Spring Boot Security Starter](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security).
-6. JSON Web Token Support For The JVM.
-7. Java Mail Sender.
-8. Springfox Swagger2 » 2.9.2.
-9. Springfox Swagger UI » 2.9.2.
+6. [JSON Web Token Support For The JVM](https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt).
+7. [Spring Boot Mail Starter](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail).
+8. [Springfox Swagger2 » 2.9.2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger2).
+9. [Springfox Swagger UI » 2.9.2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui).
