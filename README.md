@@ -12,9 +12,15 @@ Now that you're more familiar with your Bitbucket repository, go ahead and add a
 
 ---
 
-## Objetivo Projeto
-Este projeto tem por objetivo ser a base para próximos projetos.
-Neste projeto foi usado o framework Spring Boot e com gerencia de dependencia foi usado Maven.
+## Objetivo Geral
+Desenvolver um API REST em ligugem Java, usando o framework Spring Boot e o gerenciador de dependências Maven.
+A troca mensagens é feita no formato JSON.
+Foi usado a ferramenta Swagger para fazer a documentação automatizada dos recursos da API.
+
+## Instalação
+Windows:
+* [java version "1.8.0_241"](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
+
 
 ## Tecnologias
 Como o Spring Boot é divido em módulos, foi usado os seguintes módulos:
@@ -28,3 +34,7 @@ Como o Spring Boot é divido em módulos, foi usado os seguintes módulos:
 7. [Spring Boot Mail Starter](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail).
 8. [Springfox Swagger2 » 2.9.2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger2).
 9. [Springfox Swagger UI » 2.9.2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui).
+
+## Referencia
+Este projeto foi criado baseado no curso feito na Udemy, Prof. Dr. Nelio Alves
+https://www.udemy.com/user/nelio-alves
