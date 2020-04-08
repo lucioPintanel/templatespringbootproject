@@ -18,9 +18,11 @@ A troca mensagens é feita no formato JSON.
 Foi usado a ferramenta Swagger para fazer a documentação automatizada dos recursos da API.
 
 ## Instalação
-Windows:.
+Windows:
 
 * [java version "1.8.0_241"](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
+* [spring toll suite](https://spring.io/tools).
+* [Apache Maven 3.6.3 ](https://maven.apache.org/guides/getting-started/windows-prerequisites.html).
 
 
 ## Tecnologias
@@ -35,6 +37,14 @@ Como o Spring Boot é divido em módulos, foi usado os seguintes módulos:
 7. [Spring Boot Mail Starter](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail).
 8. [Springfox Swagger2 » 2.9.2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger2).
 9. [Springfox Swagger UI » 2.9.2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui).
+
+## Contributing
+
+1. Faça o _fork_ do projeto (<https://github.com/yourname/yourproject/fork>)
+2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
+3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
+4. _Push_ (`git push origin feature/fooBar`)
+5. Crie um novo _Pull Request_
 
 ## Referencia
 Este projeto foi criado baseado no curso feito na Udemy, Prof. Dr. Nelio Alves
