@@ -60,9 +60,9 @@ mvn spring-boot:run
 
 No navegador de internet acessar a documentação da API executando a seguinte URL.
 
-```sh
-_http://localhost:9000/swagger-ui.html_
-```
+
+`http://localhost:9000/swagger-ui.html`
+
 
 ---
 
