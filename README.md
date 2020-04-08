@@ -41,16 +41,6 @@ Como o Spring Boot é divido em módulos, foi usado os seguintes módulos:
 
 ---
 
-## Meta
-
-Lucio Pintanel – [Linkedin](https://www.linkedin.com/in/lucio-pintanel-89a68057/) – lm.pintanel@gmail.com
-
-Distribuído sob a licença gpl-3.0. Veja `LICENSE` para mais informações.
-
-[LICENSE](/licenses/gpl-3.0.txt)
-
----
-
 ## Execução
 Após baixar o código fonte para seu PC entre na pasta do projeto e execute.
 
@@ -73,6 +63,14 @@ No browser acessar a documentação da API executando a seguinte URL.
 3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
 4. _Push_ (`git push origin feature/fooBar`)
 5. Crie um novo _Pull Request_
+
+---
+
+## Contato
+
+Lucio Pintanel – [Linkedin](https://www.linkedin.com/in/lucio-pintanel-89a68057/) – lm.pintanel@gmail.com
+
+Distribuído sob a licença gpl-3.0. Veja [LICENSE](/licenses/gpl-3.0.txt) para mais informações.
 
 ---
 
