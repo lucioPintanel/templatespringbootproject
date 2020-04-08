@@ -18,8 +18,9 @@ A troca mensagens é feita no formato JSON.
 Foi usado a ferramenta Swagger para fazer a documentação automatizada dos recursos da API.
 
 ## Instalação
-Windows:
-- [java version "1.8.0_241"](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
+Windows:.
+
+* [java version "1.8.0_241"](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html).
 
 
 ## Tecnologias
