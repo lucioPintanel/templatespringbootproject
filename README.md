@@ -1,5 +1,4 @@
 # API REST - Spring Boot
-[![Maven Version][maven-image]][maven-url]
 
 ## Objetivo Geral
 Desenvolver um API REST em ligugem Java, usando o framework Spring Boot e o gerenciador de dependências Maven.
@@ -39,6 +38,16 @@ Como o Spring Boot é divido em módulos, foi usado os seguintes módulos:
 7. [Spring Boot Mail Starter](https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail).
 8. [Springfox Swagger2 » 2.9.2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger2).
 9. [Springfox Swagger UI » 2.9.2](https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui).
+
+---
+
+## Meta
+
+Lucio Pintanel – [Linkedin](https://www.linkedin.com/in/lucio-pintanel-89a68057/) – lm.pintanel@gmail.com
+
+Distribuído sob a licença gpl-3.0. Veja `LICENSE` para mais informações.
+
+[LICENSE](/licenses/gpl-3.0.txt)
 
 ---
 
