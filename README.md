@@ -3,13 +3,13 @@
 ## Objetivo Geral
 Desenvolver um API REST em ligugem Java, usando o framework Spring Boot e o gerenciador de dependências Maven.
 
+---
+
+## Decrição
 A troca de mensagens é feita no formato JSON.
 
 Foi usado a ferramenta Swagger para fazer a documentação automatizada dos recursos da API.
 
----
-
-## Decrição
 Esta API REST é um desenvolvimento básico com implementação de tratamentos de erros, autorização e autenticação com JWT, mas somente para o endpoint User.
 
 O desenvolvedor deverá adionar os seus endpoints necessários para completar sua API.
@@ -48,6 +48,19 @@ Lucio Pintanel – [Linkedin](https://www.linkedin.com/in/lucio-pintanel-89a6805
 Distribuído sob a licença gpl-3.0. Veja `LICENSE` para mais informações.
 
 [LICENSE](/licenses/gpl-3.0.txt)
+
+---
+
+## Execução
+Após baixar o código fonte para seu PC entre na pasta do projeto e execute.
+
+```sh
+mvn spring-boot:run
+```
+
+No navegador de internet acessar a documentação da API executando a seguinte URL.
+
+_http://localhost:9000/swagger-ui.html_
 
 ---
 
