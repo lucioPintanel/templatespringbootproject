@@ -58,11 +58,10 @@ No browser acessar a documentação da API executando a seguinte URL.
 
 ## Contributing
 
-1. Faça o _fork_ do projeto (<https://github.com/yourname/yourproject/fork>)
-2. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
-3. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
-4. _Push_ (`git push origin feature/fooBar`)
-5. Crie um novo _Pull Request_
+1. Crie uma _branch_ para sua modificação (`git checkout -b feature/fooBar`)
+2. Faça o _commit_ (`git commit -am 'Add some fooBar'`)
+3. _Push_ (`git push origin feature/fooBar`)
+4. Crie um novo _Pull Request_
 
 ---
 
