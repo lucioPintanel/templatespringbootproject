@@ -44,18 +44,21 @@ Use these steps to clone from SourceTree, our client for using the repository co
 
 Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
 
+---
+
 ## Objetivo Projeto
 Este projeto tem por objetivo ser a base para próximos projetos.
 Neste projeto foi usado o framework Spring Boot e com gerencia de dependencia foi usado Maven.
 
 ## Tecnologias
 Como o Spring Boot é divido em módulos, foi usado os seguintes módulos:
-1. Spring Boot Web Starter
-2. Spring Boot Data JPA Starter
-3. Spring Boot DevTools
-4. H2 Database Engine
-5. Spring Boot Security Starter (https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security)
-6. JSON Web Token Support For The JVM
-7. Java Mail Sender
-8. Springfox Swagger2 » 2.9.2
-9. Springfox Swagger UI » 2.9.2
+
+1. Spring Boot Web Starter.
+2. Spring Boot Data JPA Starter.
+3. Spring Boot DevTools.
+4. H2 Database Engine.
+5. Spring Boot Security Starter (https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security).
+6. JSON Web Token Support For The JVM.
+7. Java Mail Sender.
+8. Springfox Swagger2 » 2.9.2.
+9. Springfox Swagger UI » 2.9.2.
