@@ -1,4 +1,5 @@
 # API REST - Spring Boot
+[![Maven Version][maven-image]][maven-url]
 
 ## Objetivo Geral
 Desenvolver um API REST em ligugem Java, usando o framework Spring Boot e o gerenciador de dependências Maven.
@@ -12,7 +13,7 @@ Foi usado a ferramenta Swagger para fazer a documentação automatizada dos recu
 ## Decrição
 Esta API REST é um desenvolvimento básico com implementação de tratamentos de erros, autorização e autenticação com JWT, mas somente para o endpoint User.
 
-Esta API foi desenvolvida com intenção de servir de base para APIs mais complexas. O desenvolvedor deverá adionar os seus endpoints necessários para completar sua API.
+O desenvolvedor deverá adionar os seus endpoints necessários para completar sua API.
 
 ---
 
