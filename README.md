@@ -58,7 +58,7 @@ Após baixar o código fonte para seu PC entre na pasta do projeto e execute.
 mvn spring-boot:run
 ```
 
-No navegador de internet acessar a documentação da API executando a seguinte URL.
+No browser acessar a documentação da API executando a seguinte URL.
 
 
 `http://localhost:9000/swagger-ui.html`
